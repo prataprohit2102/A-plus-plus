@@ -1,0 +1,5 @@
+1.Implemented a new object in page class for new hash(#) button
+2.IDs for username and password fields are now swapped and hence changes are done in page class.
+3. website URL is chanegs in v2 and hence changes are done in testNG setup method.
+4.Login button ID is changed hence hence changes are done in page class.
+5.Implemented rating checkbox using css path
