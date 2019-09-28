@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">   --// parallel="tests">
+ 
+<listeners>
+  <listener class-name="extentReporter.ExtentReporterNG" />  
+<listener class-name="customlisterns.Listerns" />
+
+</listeners>
+
+  <test name="Test1"  > 
+  <parameter  name="browser" value="chrome"> its a browser paramater</parameter>
+    
+    <classes>
+      <class name="parameterization.parallelTests"/>
+      
+    </classes>
+  
+  </test> <!-- Test -->
+   <test name="Test2"  > 
+   <parameter  name="browser" value="firefox"> its a browser paramater</parameter>
+    
+    <classes>
+      <class name="parameterization.parallelTests"/>
+      
+    </classes>
+  
+  </test> <!-- Test -->
+   
+   
+</suite> <!-- Suite -->
